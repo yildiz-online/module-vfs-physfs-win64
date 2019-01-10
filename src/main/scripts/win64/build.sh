@@ -6,8 +6,6 @@ cmake . \
 make
 r1=$?
 
-cp physicsfs/win64/lib/libphysfs.dll ../../../../target/classes/win64/libphysfs.dll
-
 rm -R CMakeFiles
 rm CMakeCache.txt
 rm cmake_install.cmake
