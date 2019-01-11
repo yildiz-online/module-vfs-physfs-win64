@@ -14,7 +14,6 @@ file(
         GLOB_RECURSE
         source_files
         ${CMAKE_SOURCE_DIR}/../../c++/*.cpp
-        ${CMAKE_SOURCE_DIR}/../../c++/*.c
         ${CMAKE_SOURCE_DIR}/../../includes/*.hpp
         ${CMAKE_SOURCE_DIR}/../../includes/*.h
 )
