@@ -8,12 +8,12 @@ cmake . \
 -DLIBRARY_OUTPUT_PATH="../../../../target/classes/win64" \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
-make
+#make
 r1=$?
 
-cp physicsfs/win64/bin/libphysfs.dll ../../../target/classes/win64/libphysfs.dll
-cp libstdc++-6.dll ../../../target/classes/win64/libstdc++-6.dll
-cp libgcc_s_seh-1.dll ../../../target/classes/win64/libgcc_s_seh-1.dll
+cp physicsfs/win64/bin/libphysfs.dll ../../../../target/classes/win64/libphysfs.dll
+cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
+cp libgcc_s_seh-1.dll ../../../../target/classes/win64/libgcc_s_seh-1.dll
 
 rm -R CMakeFiles
 rm CMakeCache.txt
