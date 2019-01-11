@@ -7,7 +7,7 @@ cmake . \
 -DLIBRARY_OUTPUT_PATH="../../../../target/classes/win64" \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
-#make
+make
 r1=$?
 
 cp physicsfs/win64/bin/libphysfs.dll ../../../../target/classes/win64/libphysfs.dll
