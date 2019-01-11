@@ -8,7 +8,7 @@ find_package(PhysFS REQUIRED)
 
 include_directories(${PHYSFS_INCLUDE_DIR})
 include_directories("java/include")
-include_directories("java/include/linux")
+include_directories("java/include/win32")
 
 file(
         GLOB_RECURSE
