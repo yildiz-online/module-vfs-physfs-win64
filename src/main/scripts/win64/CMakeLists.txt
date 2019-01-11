@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.0.0)
 
-project (yildiz_native_physfs)
+project (yildiz_native_physfs C CXX)
 
 set(CMAKE_CXX_FLAGS "-O2 -fPIC -std=gnu++11")
 
