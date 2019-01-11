@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 
 cmake . \
 -DCMAKE_MODULE_PATH=. \
