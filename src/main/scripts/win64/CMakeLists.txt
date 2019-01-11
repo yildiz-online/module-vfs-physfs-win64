@@ -20,4 +20,4 @@ file(
 
 add_library(yildizphysfs SHARED ${source_files})
 
-target_link_libraries(yildizphysfs ${CMAKE_SOURCE_DIR}/physicsfs/win64/lib/libphysfs.a)
+target_link_libraries(yildizphysfs ${CMAKE_SOURCE_DIR}/physicsfs/win64/lib/libphysfs.dll.a)
