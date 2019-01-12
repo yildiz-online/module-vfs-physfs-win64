@@ -18,7 +18,7 @@ file(
         ${CMAKE_SOURCE_DIR}/../../includes/*.h
 )
 
-include(generate_product_version)
+
 generate_product_version(
    VersionFilesOutputVariable
    NAME "Yildiz VFS native PhysFS"
@@ -27,6 +27,8 @@ generate_product_version(
    VERSION_PATCH 0
    VERSION_REVISION 1
 )
+
+include(generate_product_version)
 
 add_library(yildizphysfs SHARED ${source_files})
 
