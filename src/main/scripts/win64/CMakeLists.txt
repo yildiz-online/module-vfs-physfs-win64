@@ -18,18 +18,6 @@ file(
         ${CMAKE_SOURCE_DIR}/../../includes/*.h
 )
 
-
-generate_product_version(
-   VersionFilesOutputVariable
-   NAME "Yildiz VFS native PhysFS"
-   VERSION_MAJOR 1
-   VERSION_MINOR 0
-   VERSION_PATCH 0
-   VERSION_REVISION 1
-)
-
-include(generate_product_version)
-
 add_library(yildizphysfs SHARED ${source_files})
 
 target_link_libraries(yildizphysfs ${CMAKE_SOURCE_DIR}/physicsfs/win64/lib/libphysfs.dll.a)
