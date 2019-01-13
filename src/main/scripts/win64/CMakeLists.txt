@@ -18,6 +18,6 @@ file(
         ${CMAKE_SOURCE_DIR}/../../includes/*.h
 )
 
-add_library(yildizphysfs SHARED ${source_files})
+add_library(yildizphysfs SHARED ${source_files} ${CMAKE_SOURCE_DIR}/version.rc)
 
 target_link_libraries(yildizphysfs ${CMAKE_SOURCE_DIR}/physicsfs/win64/lib/libphysfs.dll.a)
