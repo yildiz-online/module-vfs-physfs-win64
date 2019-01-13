@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.0.0)
 
 project (yildiz_native_physfs)
 
-set(CMAKE_CXX_FLAGS "-O2 -fPIC -std=gnu++11")
+set(CMAKE_CXX_FLAGS "-fPIC -std=gnu++11")
 
 find_package(PhysFS REQUIRED)
 
@@ -20,4 +20,4 @@ file(
 
 add_library(yildizphysfs SHARED ${source_files} ${CMAKE_SOURCE_DIR}/version.rc)
 
-target_link_libraries(yildizphysfs ${CMAKE_SOURCE_DIR}/physicsfs/win64/lib/libphysfs.dll.a)
+target_link_libraries(yildizphysfs ${CMAKE_SOURCE_DIR}/physicsfs/win64/lib/libphysfs.a)
