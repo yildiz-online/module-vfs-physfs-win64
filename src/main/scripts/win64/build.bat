@@ -9,7 +9,6 @@ cmake . ^
 SET r1=
 mingw32-make
 
-cd ..
 copy libstdc++-6.dll ../../../../target/classes/win64
 copy libgcc_s_seh-1.dll ../../../../target/classes/win64
 
