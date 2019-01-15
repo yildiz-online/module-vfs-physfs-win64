@@ -17,11 +17,11 @@ echo -e "        BLOCK \"040904b0\"" >> version.rc
 echo -e "        BEGIN" >> version.rc
 echo -e "            VALUE \"FileDescription\", \"Yildiz-Engine VFS with PhysFS implementation.\"" >> version.rc
 echo -e "            VALUE \"FileVersion\", \"1, 0, 0, 2\"" >> version.rc
-echo -e "            VALUE \"InternalName\", \"libyildizphysfs.dll\\0\"" >> version.rc
-echo -e "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\\0\"" >> version.rc
-echo -e "            VALUE \"OriginalFilename\", \"libyildizphysfs.dll\\0\"" >> version.rc
-echo -e "            VALUE \"CompanyName\", \"Yildiz-Games\\0\"" >> version.rc
-echo -e "            VALUE \"ProductName\", \"Yildiz-Engine VFS PHYSFS module.\\0\"" >> version.rc
+echo -e "            VALUE \"InternalName\", \"libyildizphysfs.dll\"" >> version.rc
+echo -e "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\"" >> version.rc
+echo -e "            VALUE \"OriginalFilename\", \"libyildizphysfs.dll\"" >> version.rc
+echo -e "            VALUE \"CompanyName\", \"Yildiz-Games\"" >> version.rc
+echo -e "            VALUE \"ProductName\", \"Yildiz-Engine VFS PHYSFS module.\"" >> version.rc
 echo -e "            VALUE \"ProductVersion\", \"1, 0, 0, 0\"" >> version.rc
 echo -e "        END" >> version.rc
 echo -e "    END" >> version.rc
