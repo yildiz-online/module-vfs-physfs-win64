@@ -23,7 +23,7 @@ rm libgcc_s_seh-1.dll
 rm libstdc++-6.dll
 rm mingw-toolchain.cmake
 
-chmod 777 generate-version.sh
-./generate-version.sh
+chmod 777 generate-versionrc.sh
+./generate-versionrc.sh
 
 return $r1
