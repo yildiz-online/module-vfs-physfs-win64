@@ -100,6 +100,15 @@
             </executions>
           </plugin>
         </plugins>
+        <resources>
+          <resource>
+            <directory>src/main/resources/project</directory>
+            <filtering>true</filtering>
+            <includes>
+              <include>**/version.txt</include>
+            </includes>
+          </resource>
+        </resources>
       </build>
     </profile>
   </profiles>
