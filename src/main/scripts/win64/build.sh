@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-#source ../../../../target/classes/project.txt
+source ../../../../target/maven-archiver/pom.properties
 
-VERSION=1.0.0.0
+echo "version"
+echo $version
 
 echo "1 VERSIONINFO" > version.rc
-echo "FILEVERSION $VERSION" | tr . , >> version.rc
-echo "PRODUCTVERSION $VERSION" | tr . , >> version.rc
+echo "FILEVERSION $version" | tr . , >> version.rc
+echo "PRODUCTVERSION $version" | tr . , >> version.rc
 echo "FILEFLAGSMASK 0x17L" >> version.rc
 echo "FILEFLAGS 0x0L" >> version.rc
 echo "FILEOS 0x4L" >> version.rc
@@ -18,13 +19,13 @@ echo "    BEGIN" >> version.rc
 echo "        BLOCK \"040904b0\"" >> version.rc
 echo "        BEGIN" >> version.rc
 echo "            VALUE \"FileDescription\", \"Yildiz-Engine VFS with PhysFS implementation.\"" >> version.rc
-echo "            VALUE \"FileVersion\", \"$VERSION\"" | tr . , >> version.rc
+echo "            VALUE \"FileVersion\", \"$version\"" | tr . , >> version.rc
 echo "            VALUE \"InternalName\", \"libyildizphysfs.dll\\\0\"" >> version.rc
 echo "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\\\0\"" >> version.rc
 echo "            VALUE \"OriginalFilename\", \"libyildizphysfs.dll\\\0\"" >> version.rc
 echo "            VALUE \"CompanyName\", \"Yildiz-Games\\\0\"" >> version.rc
 echo "            VALUE \"ProductName\", \"Yildiz-Engine VFS PHYSFS module.\\\0\"" >> version.rc
-echo "            VALUE \"ProductVersion\", \"$VERSION\"" | tr . , >> version.rc
+echo "            VALUE \"ProductVersion\", \"$version\"" | tr . , >> version.rc
 echo "        END" >> version.rc
 echo "    END" >> version.rc
 echo "    BLOCK \"VarFileInfo\"" >> version.rc
