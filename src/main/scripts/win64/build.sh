@@ -2,35 +2,35 @@
 
 VERSION=1.0.0.0
 
-echo -e "1 VERSIONINFO" > version.rc
-echo -e "FILEVERSION $VERSION" | tr . , >> version.rc
-echo -e "PRODUCTVERSION $VERSION" | tr . , >> version.rc
-echo -e "FILEFLAGSMASK 0x17L" >> version.rc
-echo -e "FILEFLAGS 0x0L" >> version.rc
-echo -e "FILEOS 0x4L" >> version.rc
-echo -e "FILETYPE 0x1L" >> version.rc
-echo -e "FILESUBTYPE 0x0L" >> version.rc
-echo -e "BEGIN" >> version.rc
-echo -e "    BLOCK \"StringFileInfo\"" >> version.rc
-echo -e "    BLOCK \"StringFileInfo\"" >> version.rc
-echo -e "    BEGIN" >> version.rc
-echo -e "        BLOCK \"040904b0\"" >> version.rc
-echo -e "        BEGIN" >> version.rc
-echo -e "            VALUE \"FileDescription\", \"Yildiz-Engine VFS with PhysFS implementation.\"" >> version.rc
-echo -e "            VALUE \"FileVersion\", \"$VERSION\"" | tr . , >> version.rc
-echo -e "            VALUE \"InternalName\", \"libyildizphysfs.dll\\\0\"" >> version.rc
-echo -e "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\\\0\"" >> version.rc
-echo -e "            VALUE \"OriginalFilename\", \"libyildizphysfs.dll\\\0\"" >> version.rc
-echo -e "            VALUE \"CompanyName\", \"Yildiz-Games\\\0\"" >> version.rc
-echo -e "            VALUE \"ProductName\", \"Yildiz-Engine VFS PHYSFS module.\\\0\"" >> version.rc
-echo -e "            VALUE \"ProductVersion\", \"$VERSION\"" | tr . , >> version.rc
-echo -e "        END" >> version.rc
-echo -e "    END" >> version.rc
-echo -e "    BLOCK \"VarFileInfo\"" >> version.rc
-echo -e "    BEGIN" >> version.rc
-echo -e "        VALUE \"Translation\", 0x409, 1200" >> version.rc
-echo -e "    END" >> version.rc
-echo -e "END" >> version.rc
+echo "1 VERSIONINFO" > version.rc
+echo "FILEVERSION $VERSION" | tr . , >> version.rc
+echo "PRODUCTVERSION $VERSION" | tr . , >> version.rc
+echo "FILEFLAGSMASK 0x17L" >> version.rc
+echo "FILEFLAGS 0x0L" >> version.rc
+echo "FILEOS 0x4L" >> version.rc
+echo "FILETYPE 0x1L" >> version.rc
+echo "FILESUBTYPE 0x0L" >> version.rc
+echo "BEGIN" >> version.rc
+echo "    BLOCK \"StringFileInfo\"" >> version.rc
+echo "    BLOCK \"StringFileInfo\"" >> version.rc
+echo "    BEGIN" >> version.rc
+echo "        BLOCK \"040904b0\"" >> version.rc
+echo "        BEGIN" >> version.rc
+echo "            VALUE \"FileDescription\", \"Yildiz-Engine VFS with PhysFS implementation.\"" >> version.rc
+echo "            VALUE \"FileVersion\", \"$VERSION\"" | tr . , >> version.rc
+echo "            VALUE \"InternalName\", \"libyildizphysfs.dll\\\0\"" >> version.rc
+echo "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\\\0\"" >> version.rc
+echo "            VALUE \"OriginalFilename\", \"libyildizphysfs.dll\\\0\"" >> version.rc
+echo "            VALUE \"CompanyName\", \"Yildiz-Games\\\0\"" >> version.rc
+echo "            VALUE \"ProductName\", \"Yildiz-Engine VFS PHYSFS module.\\\0\"" >> version.rc
+echo "            VALUE \"ProductVersion\", \"$VERSION\"" | tr . , >> version.rc
+echo "        END" >> version.rc
+echo "    END" >> version.rc
+echo "    BLOCK \"VarFileInfo\"" >> version.rc
+echo "    BEGIN" >> version.rc
+echo "        VALUE \"Translation\", 0x409, 1200" >> version.rc
+echo "    END" >> version.rc
+echo "END" >> version.rc
 
 cat version.rc
 
