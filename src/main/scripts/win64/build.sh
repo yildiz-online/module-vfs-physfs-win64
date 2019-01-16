@@ -1,3 +1,5 @@
+cd ../../../../target/classes
+ls
 source ../../../../target/classes/project.txt
 
 #VERSION=1.0.0.0
