@@ -33,8 +33,6 @@ echo "        VALUE \"Translation\", 0x409, 1200" >> version.rc
 echo "    END" >> version.rc
 echo "END" >> version.rc
 
-cat version.rc
-
 cmake . \
 -DCMAKE_MODULE_PATH=. \
 -DCMAKE_BUILD_TYPE=Release \
@@ -44,7 +42,6 @@ cmake . \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
 make
-r1=$?
 
 cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
 cp libgcc_s_seh-1.dll ../../../../target/classes/win64/libgcc_s_seh-1.dll
@@ -58,5 +55,3 @@ rm -r java
 rm libgcc_s_seh-1.dll
 rm libstdc++-6.dll
 rm mingw-toolchain.cmake
-
-return $r1
