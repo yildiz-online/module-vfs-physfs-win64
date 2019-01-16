@@ -105,7 +105,7 @@
             <directory>src/main/resources/</directory>
             <filtering>true</filtering>
             <includes>
-              <include>**/version.txt</include>
+              <include>**/project.txt</include>
             </includes>
           </resource>
         </resources>
