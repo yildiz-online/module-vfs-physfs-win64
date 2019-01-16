@@ -1,8 +1,8 @@
-cd ../../../../target/classes
-ls
-source ../../../../target/classes/project.txt
+#!/usr/bin/env bash
 
-#VERSION=1.0.0.0
+#source ../../../../target/classes/project.txt
+
+VERSION=1.0.0.0
 
 echo "1 VERSIONINFO" > version.rc
 echo "FILEVERSION $VERSION" | tr . , >> version.rc
@@ -13,7 +13,6 @@ echo "FILEOS 0x4L" >> version.rc
 echo "FILETYPE 0x1L" >> version.rc
 echo "FILESUBTYPE 0x0L" >> version.rc
 echo "BEGIN" >> version.rc
-echo "    BLOCK \"StringFileInfo\"" >> version.rc
 echo "    BLOCK \"StringFileInfo\"" >> version.rc
 echo "    BEGIN" >> version.rc
 echo "        BLOCK \"040904b0\"" >> version.rc
