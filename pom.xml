@@ -102,7 +102,7 @@
         </plugins>
         <resources>
           <resource>
-            <directory>src/main/resources/project</directory>
+            <directory>src/main/resources/</directory>
             <filtering>true</filtering>
             <includes>
               <include>**/version.txt</include>
