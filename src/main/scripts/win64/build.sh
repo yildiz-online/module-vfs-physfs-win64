@@ -1,4 +1,6 @@
-source ../../../../target/classes/project.txt
+#source ../../../../target/classes/project.txt
+
+VERSION=1.0.0.0
 
 echo -e "1 VERSIONINFO" > version.rc
 echo -e "FILEVERSION $VERSION" | tr . , >> version.rc
