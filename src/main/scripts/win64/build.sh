@@ -3,7 +3,6 @@
 source ../../../../target/classes/project.txt
 
 VERSION=${VERSION%"-SNAPSHOT"}
-echo $VERSION
 
 echo "1 VERSIONINFO" > version.rc
 echo "FILEVERSION $VERSION,0" | tr . , >> version.rc
