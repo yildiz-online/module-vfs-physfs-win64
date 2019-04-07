@@ -46,6 +46,12 @@ make
 cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
 cp libgcc_s_seh-1.dll ../../../../target/classes/win64/libgcc_s_seh-1.dll
 
+mkdir ../../../../target/classes/win64/include
+cp ../../../../src/main/includes/yz_physfs_Wrapper.hpp ../../../../target/classes/win64/include
+cp ../../../../src/main/includes/yz_physfs_File.hpp ../../../../target/classes/win64/include
+cp ../../../../src/main/includes/yz_physfs_Container.hpp ../../../../target/classes/win64/include
+cp ../../../../src/main/includes/yz_physfs_ArchiveTypeInfo.hpp ../../../../target/classes/win64/include
+
 rm -R CMakeFiles
 rm CMakeCache.txt
 rm cmake_install.cmake
