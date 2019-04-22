@@ -51,6 +51,7 @@ cp ../../../../src/main/includes/yz_physfs_Wrapper.hpp ../../../../target/classe
 cp ../../../../src/main/includes/yz_physfs_File.hpp ../../../../target/classes/win64/include
 cp ../../../../src/main/includes/yz_physfs_Container.hpp ../../../../target/classes/win64/include
 cp ../../../../src/main/includes/yz_physfs_ArchiveTypeInfo.hpp ../../../../target/classes/win64/include
+cp ../../../../src/main/includes/yz_physfs_system_platform.hpp ../../../../target/classes/win64/include
 cp physicsfs/win64/include/physfs.h ../../../../target/classes/win64/include
 
 rm -R CMakeFiles
