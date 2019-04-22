@@ -36,6 +36,7 @@ echo "END" >> version.rc
 cmake . \
 -DCMAKE_MODULE_PATH=. \
 -DCMAKE_BUILD_TYPE=Release \
+-DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=True \
 -DPHYSFS_INCLUDE_DIR="physicsfs/win64/include" \
 -DPHYSFS_LIBRARY="physicsfs/win64/lib/libphysfs.a" \
 -DLIBRARY_OUTPUT_PATH="../../../../target/classes/win64" \
