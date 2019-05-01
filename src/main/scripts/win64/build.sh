@@ -21,9 +21,9 @@ echo "            VALUE \"FileDescription\", \"Yildiz-Engine VFS with PhysFS imp
 echo "            VALUE \"FileVersion\", \"$VERSION,$BUILD_NUMBER\"" | tr . , >> version.rc
 echo "            VALUE \"InternalName\", \"libyildizphysfs.dll\\\0\"" >> version.rc
 echo "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\"" >> version.rc
-echo "            VALUE \"OriginalFilename\", \"libyildizphysfs.dll\\\0\"" >> version.rc
+echo "            VALUE \"OriginalFilename\", \"libyildizphysfs.dll\"" >> version.rc
 echo "            VALUE \"CompanyName\", \"Yildiz-Games\\\0\"" >> version.rc
-echo "            VALUE \"ProductName\", \"Yildiz-Engine VFS PHYSFS module.\\\0\"" >> version.rc
+echo "            VALUE \"ProductName\", \"Yildiz-Engine VFS PHYSFS module\"" >> version.rc
 echo "            VALUE \"ProductVersion\", \"$VERSION,0\"" | tr . , >> version.rc
 echo "        END" >> version.rc
 echo "    END" >> version.rc
