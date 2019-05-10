@@ -54,7 +54,7 @@
     <dependency>
       <groupId>be.yildiz-games</groupId>
       <artifactId>module-vfs-physfs</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
