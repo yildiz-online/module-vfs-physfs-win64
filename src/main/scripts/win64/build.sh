@@ -55,12 +55,3 @@ cp ../../../../src/main/includes/yz_physfs_ArchiveTypeInfo.hpp ../../../../targe
 cp ../../../../src/main/includes/yz_physfs_system_platform.hpp ../../../../target/classes/win64/include
 cp physicsfs/win64/include/physfs.h ../../../../target/classes/win64/include
 
-rm -R CMakeFiles
-rm CMakeCache.txt
-rm cmake_install.cmake
-rm Makefile
-rm -r physicsfs
-rm -r java
-rm libgcc_s_seh-1.dll
-rm libstdc++-6.dll
-rm mingw-toolchain.cmake
