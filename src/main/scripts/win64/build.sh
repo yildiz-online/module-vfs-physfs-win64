@@ -33,7 +33,7 @@ echo "        VALUE \"Translation\", 0x409, 1200" >> version.rc
 echo "    END" >> version.rc
 echo "END" >> version.rc
 
-cmake . \
+./cmake . \
 -DCMAKE_MODULE_PATH=. \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=True \
@@ -42,7 +42,7 @@ cmake . \
 -DLIBRARY_OUTPUT_PATH="../../../../target/classes/win64" \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
-make
+./make
 r1=$?
 
 cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
