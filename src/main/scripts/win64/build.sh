@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 source ../../../../target/classes/project.txt
 
@@ -32,8 +32,6 @@ echo "    BEGIN" >> version.rc
 echo "        VALUE \"Translation\", 0x409, 1200" >> version.rc
 echo "    END" >> version.rc
 echo "END" >> version.rc
-
-echo $path
 
 cmake . \
 -DCMAKE_MODULE_PATH=. \
