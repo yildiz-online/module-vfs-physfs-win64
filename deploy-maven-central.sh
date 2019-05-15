@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-cmake --version
+echo ">>>>>>>>>"
+echo ${PATH}
+echo "<<<<<<<<<"
 
 SECRETS=$(curl -sS -H "X-Vault-Token: $VAULT_TOKEN" -X GET https://vault.yildiz-games.be/v1/kv/yildiz-engine)
 
