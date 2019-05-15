@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cmake --version
+
 SECRETS=$(curl -sS -H "X-Vault-Token: $VAULT_TOKEN" -X GET https://vault.yildiz-games.be/v1/kv/yildiz-engine)
 
 #Some variables need to be exported as env variable to be used by external processes.
