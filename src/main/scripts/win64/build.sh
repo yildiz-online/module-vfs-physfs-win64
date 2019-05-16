@@ -43,7 +43,6 @@ cmake . \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
 make
-r1=$?
 
 cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
 cp libgcc_s_seh-1.dll ../../../../target/classes/win64/libgcc_s_seh-1.dll
@@ -55,5 +54,3 @@ cp ../../../../src/main/includes/yz_physfs_Container.hpp ../../../../target/clas
 cp ../../../../src/main/includes/yz_physfs_ArchiveTypeInfo.hpp ../../../../target/classes/win64/include
 cp ../../../../src/main/includes/yz_physfs_system_platform.hpp ../../../../target/classes/win64/include
 cp physicsfs/win64/include/physfs.h ../../../../target/classes/win64/include
-
-exit ${r1}
