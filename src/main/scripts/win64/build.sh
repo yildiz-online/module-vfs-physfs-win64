@@ -31,8 +31,6 @@ echo "        VALUE \"Translation\", 0x409, 1200" >> version.rc
 echo "    END" >> version.rc
 echo "END" >> version.rc
 
-cat version.rc
-
 cmake . \
 -DCMAKE_MODULE_PATH=. \
 -DCMAKE_BUILD_TYPE=Release \
