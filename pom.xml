@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--
   ~ This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
   ~
@@ -24,27 +26,30 @@
 
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
-  <name>Yildiz Module Vfs PhysFs Win64</name>
+
+  <name>Yildiz-Engine Module Vfs PhysFs Windows 64</name>
   <description>Physfs implementation for the module vfs for windows 64.</description>
-  <url>https://bitbucket.org/yildiz-engine-team/module-vfs-physfs-win64</url>
+  <inceptionYear>2018</inceptionYear>
+  <url>https://engine.yildiz-games.be</url>
 
   <artifactId>module-vfs-physfs-win64</artifactId>
   <version>1.0.1-SNAPSHOT</version>
-
-  <packaging>jar</packaging>
-  <inceptionYear>2018</inceptionYear>
-  <scm>
-    <connection>scm:git:https://bitbucket.org/yildiz-engine-team/module-vfs-physfs-win64</connection>
-    <developerConnection>scm:git:https://bitbucket.org/yildiz-engine-team/module-vfs-physfs-win64</developerConnection>
-    <url>https://bitbucket.org/yildiz-engine-team/module-vfs-physfs-win64</url>
-  </scm>
 
   <parent>
     <groupId>be.yildiz-games</groupId>
     <artifactId>parent-native</artifactId>
     <version>2.0.7</version>
   </parent>
+
+  <packaging>jar</packaging>
+
+  <scm>
+    <connection>scm:git:https://github.com/yildiz-online/module-vfs-physfs-win64</connection>
+    <developerConnection>scm:git:https://github.com/yildiz-online/module-vfs-physfs-win64</developerConnection>
+    <url>https://github.com/yildiz-online/module-vfs-physfs-win64</url>
+  </scm>
 
   <properties>
     <nativeEnv>win64</nativeEnv>
