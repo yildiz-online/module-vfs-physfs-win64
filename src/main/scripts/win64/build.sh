@@ -56,5 +56,5 @@ cp ../../../../src/main/includes/yz_physfs_ArchiveTypeInfo.hpp ../../../../targe
 cp ../../../../src/main/includes/yz_physfs_system_platform.hpp ../../../../target/classes/win64/include
 cp physicsfs/win64/include/physfs.h ../../../../target/classes/win64/include
 
-exit $r1
+exit ${r1}
 
