@@ -4,6 +4,8 @@ source ../../../../target/classes/project.txt
 
 VERSION=${VERSION%"-SNAPSHOT"}
 
+echo "VERSION: $VERSION"
+
 echo "1 VERSIONINFO" > version.rc
 echo "FILEVERSION $VERSION,$BUILD_NUMBER" | tr . , >> version.rc
 echo "PRODUCTVERSION $VERSION,0" | tr . , >> version.rc
