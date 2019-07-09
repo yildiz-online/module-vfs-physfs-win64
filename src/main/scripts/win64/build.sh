@@ -4,8 +4,6 @@ source ../../../../target/classes/project.txt
 
 VERSION=${VERSION%"-SNAPSHOT"}
 
-echo "VERSION: $VERSION"
-
 echo "1 VERSIONINFO" > version.rc
 echo "FILEVERSION $VERSION,$BUILD_NUMBER" | tr . , >> version.rc
 echo "PRODUCTVERSION $VERSION,0" | tr . , >> version.rc
@@ -34,6 +32,8 @@ echo "    BEGIN" >> version.rc
 echo "        VALUE \"Translation\", 0x409, 1200" >> version.rc
 echo "    END" >> version.rc
 echo "END" >> version.rc
+
+cat version.rc
 
 cmake . \
 -DCMAKE_MODULE_PATH=. \
